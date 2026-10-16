@@ -1,3 +1,6 @@
+# TAREA 1
+
+
 #  Portal Hogar
 
 ---
@@ -74,3 +77,23 @@ La vivienda 1 está relacionada con la convocatoria 5, que tiene estos datos:
 - **Fecha de cierre:** 29/08/2026.
 
 No se puede solicitar porque la convocatoria ya está resuelta y el plazo terminó.
+
+
+
+
+# TAREA 2
+
+## 2.2 Accesibilidad: null frente a "sin_adaptar"
+
+- Si el portal trata una vivienda sin datos como si estuviera sin adaptar, podría descartar una vivienda accesible que aún no se ha evaluado.
+
+- Si trata una vivienda sin adaptar como si solo faltaran datos, podría indicar que es adecuada para una persona en silla de ruedas cuando no lo es.
+
+- Por eso, sin datos y sin adaptar deben ser estados diferentes: uno indica que no se conoce la accesibilidad y el otro que la vivienda no está adaptada.
+
+
+
+
+
+
+
