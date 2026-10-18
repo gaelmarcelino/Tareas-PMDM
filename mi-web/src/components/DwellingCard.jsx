@@ -1,4 +1,3 @@
-
 function DwellingCard({ dwelling }) {
   const estado = dwelling.adjudicada
     ? "Adjudicada"
@@ -58,6 +57,12 @@ function DwellingCard({ dwelling }) {
           ? "Sin datos"
           : accesibilidad[dwelling.accesibilidad] ||
             dwelling.accesibilidad}
+      </p>
+
+      <p>
+        {dwelling.dormitorios != null && (
+          <span>{dwelling.dormitorios} dormitorios</span>
+        )}
       </p>
 
       <p>{renta}</p>
