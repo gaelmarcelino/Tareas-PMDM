@@ -3,7 +3,7 @@ import Badge from "./ui/Badge";
 import Rent from "./ui/Rent";
 import Specs from "./ui/Specs";
 
-function DwellingCard({ dwelling }) {
+function DwellingCard({ dwelling, variante = "rejilla" }) {
   const estado = dwelling.adjudicada
     ? "Adjudicada"
     : "Disponible";
@@ -16,7 +16,7 @@ function DwellingCard({ dwelling }) {
         }`;
 
   return (
-    <article className="dwelling-card">
+    <article className={`dwelling-card dwelling-card--${variante}`}>
       <Badge
         text={estado}
         variant={dwelling.adjudicada ? "adjudicada" : "disponible"}
@@ -40,5 +40,6 @@ function DwellingCard({ dwelling }) {
 }
 
 export default DwellingCard;
+
 
 

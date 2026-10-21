@@ -12,6 +12,7 @@ function DwellingList({ dwellings }) {
         <DwellingCard
           key={dwelling.id}
           dwelling={dwelling}
+          variante="lista"
         />
       ))}
     </section>
