@@ -19,15 +19,9 @@ function App() {
         return response.json();
       })
       
-.then((data) => {
-  const idsProblematicos = ["478", "773", "926", "34", "655"];
-
-  const viviendasProblematicas = data.filter((dwelling) =>
-    idsProblematicos.includes(String(dwelling.id))
-  );
-
-  setDwellings(viviendasProblematicas);
-})
+      .then((data) => {
+      setDwellings(data.slice(0, 12));
+    })
 
       .catch((error) => {
         console.error("Error al cargar las viviendas:", error);

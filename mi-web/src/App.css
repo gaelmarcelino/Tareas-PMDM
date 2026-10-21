@@ -182,3 +182,45 @@
     border-right-color: var(--border);
   }
 }
+
+.dwelling-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+
+.dwelling-card {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+
+.dwelling-card h2 {
+  color: #222831;
+}
+
+
+.estado {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.estado.disponible {
+  color: #176534;
+  background: #e1f5e7;
+}
+
+.estado.adjudicada {
+  color: #842029;
+  background: #f8d7da;
+}
