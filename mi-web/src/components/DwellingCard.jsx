@@ -2,6 +2,7 @@
 import Badge from "./ui/Badge";
 import Rent from "./ui/Rent";
 import Specs from "./ui/Specs";
+import Card from "./ui/Card";
 
 function DwellingCard({ dwelling, variante = "rejilla" }) {
   const estado = dwelling.adjudicada
@@ -16,7 +17,7 @@ function DwellingCard({ dwelling, variante = "rejilla" }) {
         }`;
 
   return (
-    <article className={`dwelling-card dwelling-card--${variante}`}>
+    <Card className={`dwelling-card dwelling-card--${variante}`}>
       <Badge
         text={estado}
         variant={dwelling.adjudicada ? "adjudicada" : "disponible"}
@@ -35,7 +36,7 @@ function DwellingCard({ dwelling, variante = "rejilla" }) {
       </p>
 
       <Rent dwelling={dwelling} />
-    </article>
+    </Card>
   );
 }
 
